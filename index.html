@@ -1,110 +1,102 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <title>ROBIN BOYD</title>
         <meta charset="utf-8">
-
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        
     </head>
 
     <body>
 
         <header>
-            <div class="header">
-            <div class="wrapper">
+            
+         <!-- <div class="wrapper"> 
                 <h1>
                     <a class="textdec" 
                        href="index.html"
                        style="text-decoration: none"
-                      >ROBIN<br>BOYD</a>
-                  </h1>
-                  <nav>
-                    <ul>
-                      <li><a href="ABOUT.html">ABOUT US</a></li>
-                      <li><a href="BACKGROUND.html">BACKGROUND</a></li>
-                      <li><a href="BUILDINGS.html">BUILDINGS</a></li>
-                      <li><a href="CONTACT.html">CONTACT US</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                </div>
+                      >ROBIN BOYD</a>
+                </h1> 
+              </div>--> 
+          <nav>
+            <ul class="sidebar">
+                <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>  
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="BUILDINGS.html">BUILDINGS</a></li>
+                <li><a href="BACKGROUND.html">BACKGROUND</a></li>
+                <li><a href="ABOUT.html">ABOUT</a></li>
+              </ul>
+            <ul>
+              <li><a href="index.html">ROBIN BOYD</a></li>  
+              <li class="hideonmobile"><a href="index.html">HOME</a></li>
+              <li class="hideonmobile"><a href="BUILDINGS.html">BUILDINGS</a></li>
+              <li class="hideonmobile"><a href="BACKGROUND.html">BACKGROUND</a></li>
+              <li class="hideonmobile"><a href="ABOUT.html">ABOUT</a></li>
+              <li class= "menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+          </nav>      
+            
+          <script>
+            function showSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+              const sidebar = document.querySelector('.sidebar')
+              sidebar.style.display = 'none'
+            }
+          </script>  
+
         </header>
 
+
+          
         <main>
-            <div class="main">
-                       
-            <!-- Slideshow container -->
-             <!-- Full-width images with number and caption text -->
-            <div class="container">
-                <img 
-                src="https://github.com/UC-Design/11056-source-content/blob/9abfa04b56bbae44e01a917ed67fbb8011d00f7a/robin-boyd/images/fenner%20house%20-%20robin%20boyd/fenner-house-6.JPG?raw=true"
-                alt="Fenner House" >
-                <button class="learn-more">
-            <h1> 
-                <a class="textdec"
+         <img src="assets/images/fenner-house-6.JPG">
+            <div class="wrapper">
+                <button class="learn-more"
                 style="text-decoration: none"
-                href="BUILDINGS.html">LEARN MORE</a>
-            </h1>
-                </button>
+                href="BUILDINGS.html">learn More</button>
             </div>
-            </div>
+
         </main>        
-        <!--<main class="main">
-            <div class="image container">
-                <img
-                class="main image"
-                src="https://github.com/UC-Design/11056-source-content/blob/9abfa04b56bbae44e01a917ed67fbb8011d00f7a/robin-boyd/images/fenner%20house%20-%20robin%20boyd/fenner-house-6.JPG"
-                />
-            </div>-->
-        </main>
-        <script src="script.js"></script>
+                
+      <!--  <script src="script.js"></script> -->
 
         <footer>
-            <div class="footer">
-            <div class="wrapper">
-              <p class="copyright">
-                <a
-                  style="text-decoration: none"
-                  rel="noopener"
-                  target="_blank"
-                  href=""
-                  >&copy;Abhinav Varma 2025.<br>This website was produced by students in the Faculty of Arts & Design, University of Canberra.</a
-                >
-              </p>
-              <nav>
-                <ul>
-                <li class="home button footer"><a style="text-decoration: none" href="index.html">HOME</a>
-                </li>
-                  <li class="foundation button footer">
-                    <a style="text-decoration: none" href="@robin.boyd.foundation">Instagram</a>
-                  </li>
-                  <li class="email button footer">
-                    <a
-                      rel="noopener"
-                      target="_blank"
-                      style="text-decoration: none"
-                      href="information@robinboyd.org.au."
-                      >Email</a
-                    >
-                  </li>
-                  <li class="facebook button footer">
-                    <a
-                      rel="noopener"
-                      target="_blank"
-                      style="text-decoration: none"
-                      href="The Robin Boyd Foundation"
-                      >Facebook</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-           </div>
-          </footer>
-        </body>
+        <div class="footer-content">
+          <img src="img/logo.png">
+          <p>
+          &copy;Abhinav Varma 2025.<br>This website was produced by students in the Faculty of Arts & Design, University of Canberra.
+          </p>
+          <div class="icons">
+            <a href=""><i class='bx bx-home' ></i></a>
+            <a href=""><i class='bx bx-phone' ></i></a>
+            <a href=""><i class='bx bx-envelope' ></i></a>
+            <a href=""><i class='bx bxl-instagram' ></i></a>
+            <a href=""><i class='bx bxl-facebook-circle' ></i></a>
+            
+          </div>
+        </div>   
+           
+        <div class="footer-content">
+          <h3>FOOTER</h3>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </div>
+
+        </footer>
+
+  </body>
 </html>
 
 

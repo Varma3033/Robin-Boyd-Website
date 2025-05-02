@@ -1,166 +1,246 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
+
+p {}
+
+h1 {}
+
+h2 {}   
+
+h3 {}
 
 body {
-    background: white;
-    font-family: Arial;
-    font-size: 1rem;
-    min-height:100dvh;
-    display: cover;
-    
+    min-height: 100vh;
+    background-image:'';
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+  
 /*em for margins and paddings*/ /*rem for text*/
 
-p {
-    margin-bottom: 2em;
-}
-
-h1 {
-    font-size: 3rem;
-    text-align: left;
-    font-family:'Lucida Sans';
-    margin-left: 1em;
-}
-
-h2 {
-    font-size: 1rem;
-}
-
-h3 {
-    font-size: 16px;
-}
-
-/* use flexbox for layout */
-header {
+nav {
+    background-color: rgba(84, 115, 142, 0.9);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     height: 4em;
-    width: 100%;
-    font-size: 2rem;
-    text-align: center;
-    font-family: "calibri", sans-serif;
-    background:  rgba(84, 115, 142);
-    padding-top: 1em;
-    display: cover;
-    padding-bottom: 1em;
 }
-
-header .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 97.5%;
-}
-
+ 
 nav ul {
+    width: 100%;
     list-style: none;
     display: flex;
-    gap: .3em;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+nav li {
+    height: 50px;
+
 }
 
 nav a {
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
-    color: black;
-    padding: .8em;
-    background:  rgba(84, 115, 142, 0.1);
-    border-radius: .5em;
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-size: 80%;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0);
 }
 
 nav a:hover {
-    color: black;
-    background: #9DBA94;
-}
-/*
-.wrapper {
-    color: aqua;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(157, 186, 148, 0.9);
 }
 
-.card-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
+nav li:first-child {
+    margin-right: auto;
 }
 
-.card {
-    background: green;
-    padding: 1em;
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px, 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
 }
-*/
-.main {
-    display: cover;
+
+.sidebar li {
     width: 100%;
-    font-size: 2rem;
-    text-align: center;
-    background: white;
-    height: initial;
-  }
 
-  .main .container {
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+@media(max width: 1023px) {
+    .hideonmobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+} 
+
+@media(max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
     position: relative;
-    width: 100%;
-    height: 90dvh;
-    overflow: hidden;
+    
   }
   
-  /* Make the image responsive */
-  main img {
+  img {
     width: 100%;
-    height: auto;
-    opacity: 0.7;
-    margin: -10em 0em 0em 0em;
-  }
-  
-  /* Style the button and place it in the middle of the container/image */
-  .container .learn-more {
+    height: 100vh;
+    background-image: url('https://github.com/UC-Design/11056-source-content/blob/9abfa04b56bbae44e01a917ed67fbb8011d00f7a/robin-boyd/images/fenner%20house%20-%20robin%20boyd/fenner-house-6.JPG?raw=true');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    opacity: 0.8;    
+    border: none;
+  } 
+  /* Overlay with centered button */
+  main .wrapper {
     position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgb(157, 186, 148);
-    font-size: 3rem;
-    padding: 0.75em;
-    border-radius: 0.75em;
-    opacity: 0.8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .container .learn-more:hover {
-    background-color: rgba(84, 115, 142);;
+  /* Learn More button */
+  .learn-more {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family:'Lucida Sans';
+    padding: 1em 1em;
+    background-color: rgba(157, 186, 148, 0.9);
+    color: black;
+    border: none;
+    border-radius: 1em;
+    transition:
   }
+  
+  .learn-more:hover {
+    background-color: rgba(84, 115, 142, 0.9);
+  }
+  
+  /* Mobile responsive image */
+  @media (max-width: 1023px) {
+    img {
+     width: 100%;
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     border: none;
+     background-image: url('https://github.com/UC-Design/11056-source-content/blob/main/robin-boyd/images/churchill-house-images/churchill-house-21.jpg?raw=true');
+    }
 
+  
+    .learn-more {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-family:'Lucida Sans';
+        padding: 1em 1em;
+        background-color: rgba(157, 186, 148, 0.9);
+        color: black;
+        border: none;
+        border-radius: 1em;
+        transition:
+    }
+  }
+  
   footer {
     height: auto;
     background-color: rgba(84, 115, 142);
-    padding-top: 4em;
-    padding-bottom: 0;
-    font-size: 1.5rem;
-    padding-left: 1em;
-    padding-right: 1em;
-    display: block;
-    font-family: "calibri", sans-serif;
-    text-decoration: none;
-    width: auto;
-    letter-spacing: 0.2rem;
-    margin-top: auto;
-  }
+}
+  footer nav {
+    background-color: rgba(84, 115, 142, 0.9);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    height: 4em;
+}
+ 
+footer nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px, 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 
-  .copyright{
-font-size: 1.2rem;
-padding bottom: 0.3em
-  }
+
+footer nav li {
+    height: 50px;
+
+}
+
+footer nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0);
+}
+
+footer nav a:hover {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(157, 186, 148, 0.9);
+}
+
+
+.sidebar {
+    
+
+}
+ footer nav li:first-child {
+    margin-right: auto;
+}
   a {
     color: black;
-  } /* <a href="#">Foo</a> */
+  } 
   a:hover {
     color:#9DBA94;
-  } /* <a href="#">Foo</a> */
+  } 
   
-  footer .wrapper {
+  /*footer .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: left;
@@ -168,7 +248,9 @@ padding bottom: 0.3em
     margin-bottom: 0;
   }
 
-@media (max-width: 768px) {
+
+
+/*@media (max-width: 768px) {
     .card-box {
         grid-template-columns: repeat(4,1fr);
     }
@@ -192,3 +274,19 @@ padding bottom: 0.3em
 }
 
 
+.wrapper {
+    color: aqua;
+}
+
+.card-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.card {
+    background: green;
+    padding: 1em;
+}
+*/
+  
