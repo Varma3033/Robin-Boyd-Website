@@ -48,18 +48,40 @@
 
 <main class="main-buildings">
     <div class="buildings-heading">
-        <h2>FENNER HOUSE</h2>
+        <h2>CHURCHILL HOUSE</h2>
     </div>
 
     <div class="list-wrapper">
         <ul class="list">
-          <li class="item"><div class="content">Item 1</div></li>
-          <li class="item"><div class="content">Item 2</div></li>
-          <li class="item"><div class="content">Item 3</div></li>
+          <li class="item"><div class="content"><img class="CH35" src=images/churchill/churchill-house-35.jpg><figcaption></figcaption></div></li>
+          <li class="item"><div class="content"><img class="CH5"src=images/churchill/churchill-house-5.png></div></li>
+          <li class="item"><div class="content"><img class="churchill-house-19" src=images/churchill/churchill-house-19.jpg></div></li> 
         </ul>
-        <button class="button button--previous" type="button">➜</button>
-        <button class="button button--next" type="button">➜</button>
+      <div class="churchill-house-info">
+        <div class="churchill-text">
+          <h3>The building is an example of the Late Twentieth-Century Brutalist Style (1960-) with its large areas of blank wall and off-form concrete. The complex comprises a number of components: the main building with its east and south wings, the separate north wing or pavilion, the pool and the rear carpark. The main building forms an L shape in plan, and with the north wing it encloses on three sides a courtyard in which the pool is located. The main building is of three storeys with a four storey lift tower at the southeast corner, the north wing is of two storeys, and the carpark is two storeyed.</h3>
+        </div>
       </div>
+        <!-- We're calling `handleClick` with a direction argument when the buttons are clicked -->
+        <button onclick="handleClick('previous')" class="button button--previous" type="button">➜</button>
+        <button onclick="handleClick('next')" class="button button--next" type="button">➜</button>
+    </div>
+      <script>
+        const list = document.querySelector(".list");
+      
+        // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
+        const item = document.querySelector(".item");
+        const itemWidth = item.offsetWidth;
+      
+        function handleClick(direction) {
+          // Based on the direction we call `scrollBy` with the item width we got earlier
+          if(direction === "previous") {
+            list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+          } else {
+            list.scrollBy({ left: itemWidth, behavior: "smooth" });
+          }
+        }
+      </script>
   </main>
   
 
