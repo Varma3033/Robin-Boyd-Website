@@ -24,6 +24,7 @@ h2 {
 
 h3 {}
 
+
 body {
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,8 +35,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
 }
 
+  /*header*/
 header {
     background-color: rgba(84, 115, 142, 0.75);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
@@ -88,11 +91,8 @@ header nav a{
 header nav a:hover {
     background-color: rgba(157, 186, 148, 0.25);
     border-radius: 2em;
-    padding: 2em 1em;
-    
-    
+    padding: 2em 1em; 
 }
-
 
 header .sidebar {
     position: fixed;
@@ -138,12 +138,8 @@ header .cancel-menu {
 
 }
 
-
-
 @media (min-width: 1440px) {
 
-   
-    
     header .menu-button {
         display: none;
     }
@@ -153,9 +149,10 @@ header .cancel-menu {
     }
     h2 {
     font-size: 2.5rem;
-    
 }   
+
 }
+
 @media (min-width: 1024px) {
     
     header .menu-button {
@@ -167,7 +164,6 @@ header .cancel-menu {
     }
     h2 {
     font-size: 1.5rem;
-    
 }   
 
 header nav li {
@@ -295,7 +291,6 @@ header nav a{
     font-size: 2rem;
     } 
 
-  
     .header{
         background-color: rgba(84, 115, 142, 0.75);
         box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
@@ -339,6 +334,7 @@ header nav a{
 
 }
 
+/*homepage*/
   .learn-more {
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -347,12 +343,13 @@ header nav a{
     color: black;
     border: none;
     border-radius: 1.5em;
-    transition:
+    
   }
   
   
   .learn-more:hover {
     background-color: rgba(84, 115, 142, 0.9);
+    cursor: pointer;
   }
 
   @media (max-width: 1023px) {
@@ -370,6 +367,7 @@ header nav a{
       
       .learn-more:hover {
         background-color: rgba(84, 115, 142, 0.9);
+        cursor: pointer;
       }
   }
 
@@ -389,6 +387,7 @@ header nav a{
     max-width: 100%;
 }
 
+/*about us*/
 .about-heading {
     display: flex;
     justify-content: center;
@@ -463,12 +462,13 @@ header nav a{
     color: black;
     border: none;
     border-radius: 1.5em;
-    transition:
+    
   }
   
   
   .contact-us:hover {
     background-color: rgba(84, 115, 142, 0.9);
+    cursor: pointer;
   }
 
  @media (max-width: 1439px) {
@@ -552,6 +552,7 @@ header nav a{
       
       .contact-us:hover {
         background-color: rgba(84, 115, 142, 0.9);
+        cursor: pointer;
       }
     
  }
@@ -639,6 +640,7 @@ header nav a{
       
       .contact-us:hover {
         background-color: rgba(84, 115, 142, 0.9);
+        cursor: pointer;
       }
     
  }
@@ -657,7 +659,7 @@ header nav a{
  
     .about-container {
         width: 100%;
-        max-height: 5vh;
+        min-height: 100vh;
         margin-bottom: 2em;
     }
     .about {
@@ -726,12 +728,13 @@ header nav a{
       
       .contact-us:hover {
         background-color: rgba(84, 115, 142, 0.9);
+        cursor: pointer;
       }
     
  }
 
-
-.buildings-heading{
+/*buildings*/
+ .buildings-heading{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -741,23 +744,26 @@ header nav a{
     padding-bottom: 0;
 
 }
+
+@media (min-width: 1441px) {
+
 .card-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3em;
+    gap: 5em;
+
 }
 
 .card {
-    width: 425px;
-    height: 75vh;
+    width: 600px;
+    height: 70vh;
     position: relative;
     display:flex;
-    padding: 2em;
+    padding: 4em;
     margin-bottom: 2em;
     flex-direction: column;
     align-items: center;  
-    transition: all .3s ease-in;
     background-color: rgb(240, 240, 240);
     border-radius: 1em;
     overflow: hidden;
@@ -765,8 +771,8 @@ header nav a{
 }
 
 .card .card-image {
-    height: 300px;
-    width: 350px;
+    height: 500px;
+    width: 500px;
     border-radius: 2em;
     background-position: center;
     background-size: cover;
@@ -786,23 +792,24 @@ header nav a{
     padding-bottom: 1em;
 }
 
+
 .more-btn {
+    margin-top: 2em;
     display: inline-block;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0.75em 1em;
     background-color: rgba(157, 186, 148, 0.9);
     color: black;
     border: none;
-    border-radius: 1.5em;
-    transition:
+    border-radius: 1em;
 }
-      
-      
-.contact-us:hover {
+         
+.more-btn:hover {
      background-color: rgba(84, 115, 142, 0.9);
+     cursor: pointer;
 }
-    
+}    
 
 .card:nth-child(1) .card-image {
     background-image: url(../../images/fenner-house-6.JPG);
@@ -815,6 +822,359 @@ header nav a{
 .card:nth-child(3) .card-image {
     background-image: url(../../images/manning-clark-3-anthiny-basheer.jpg);
 }
+
+
+
+ @media (max-width: 1920px) {
+
+.buildings-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 2em;
+    padding-bottom: 0;
+
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+}
+
+.card {
+    width: 425px;
+    height: 70vh;
+    position: relative;
+    display:flex;
+    padding: 2em;
+    margin-bottom: 2em;
+    flex-direction: column;
+    align-items: center;  
+    background-color: rgb(240, 240, 240);
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image {
+    height: 300px;
+    width: 350px;
+    border-radius: 2em;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.card .card-title {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 1rem;
+    color: black
+}
+
+.card-text{
+    width: 300px;
+    height: 120px;
+}
+.card .card-text p {
+    font-size: 1rem;
+    text-align: center;
+    
+}
+
+.more-btn {
+    margin-top: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding: 0.75em 1em;
+    background-color: rgba(157, 186, 148, 0.9);
+    color: black;
+    border: none;
+    border-radius: 1em;
+}
+         
+.more-btn:hover {
+     background-color: rgba(84, 115, 142, 0.9);
+     cursor: pointer;
+}
+}    
+
+@media (max-width: 1024px) {
+
+    .buildings-heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 2em;
+        padding-bottom: 0;
+    
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    
+    }
+    
+    .card {
+        width: 300px;
+        height: 70vh;
+        position: relative;
+        display:flex;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        flex-direction: column;
+        align-items: center;  
+        background-color: rgb(240, 240, 240);
+        border-radius: 1em;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card .card-image {
+        height: 250px;
+        width: 250px;
+        border-radius: 2em;
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    .card .card-title {
+        text-align: center;
+        padding: 0.2em;
+        font-size: 1rem;
+        color: black
+    }
+    
+    .card-text{
+        width: 250px;
+        height: 150px;
+    }
+    .card .card-text p {
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+    
+    .more-btn {
+        margin-top: 1em;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        padding: 0.75em 1em;
+        background-color: rgba(157, 186, 148, 0.9);
+        color: black;
+        border: none;
+        border-radius: 1em;
+    }
+             
+    .more-btn:hover {
+         background-color: rgba(84, 115, 142, 0.9);
+         cursor: pointer;
+    }
+}  
+
+@media (max-width: 1023px) {
+
+    .buildings-heading{
+        font-size: 0.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 1.5em;
+        padding-bottom: 0;
+    
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 300px;
+        height: 70vh;
+        position: relative;
+        display:flex;
+        padding: 1.5em;
+        margin-bottom: 2em;
+        flex-direction: column;
+        align-items: center;  
+        background-color: rgb(240, 240, 240);
+        border-radius: 1em;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card .card-image {
+        height: 250px;
+        width: 250px;
+        border-radius: 2em;
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    .card .card-title {
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 1rem;
+        color: black
+    }
+    
+    .card .card-text {
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    
+    .more-btn {
+        margin-top: 1em;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        padding: 0.75em 1em;
+        background-color: rgba(157, 186, 148, 0.9);
+        color: black;
+        border: none;
+        border-radius: 1em;
+    }
+             
+    .more-btn:hover {
+         background-color: rgba(84, 115, 142, 0.9);
+         cursor: pointer;
+    }
+}  
+
+@media (max-width: 425px) {
+
+    .buildings-heading{
+        font-size: 0.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 1.5em;
+        padding-bottom: 0;
+    
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 230vh;
+    }
+    
+    .card {
+        width: 300px;
+        height: 70vh;
+        position: relative;
+        display:flex;
+        padding: 1.5em;
+        
+        flex-direction: column;
+        align-items: center;  
+        background-color: rgb(240, 240, 240);
+        border-radius: 1em;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card .card-image {
+        height: 250px;
+        width: 250px;
+        border-radius: 2em;
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    .card .card-title {
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 1rem;
+        color: black
+    }
+    
+    .card .card-text {
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    
+    .more-btn {
+        margin-top: 1em;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        padding: 0.75em 1em;
+        background-color: rgba(157, 186, 148, 0.9);
+        color: black;
+        border: none;
+        border-radius: 1em;
+    }
+             
+    .more-btn:hover {
+         background-color: rgba(84, 115, 142, 0.9);
+         cursor: pointer;
+    }
+}  
+
+/*buildings info */
+
+.list {
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+  
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .item {
+    flex-shrink: 0;
+    width: 80%;
+    height: 90vh;
+  
+    background-color: #FFF;
+  
+    scroll-snap-align: center;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  
+    font-family: sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+  .list {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+
+/*footer*/
+
 .footer {
     background-color: rgba(84, 115, 142, 0.9);
     bottom: 0;
@@ -1003,9 +1363,22 @@ footer .copyright {
 }
 
 @media (max-width: 505px) {
+    body {
+        min-height: 100vh;
+        padding: 0;
+    }
+    
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../../images/fenner-house-6.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+    }
+
     .footer {
         background-color: rgba(84, 115, 142, 0.9);
-        margin-top: 100vh;
+     
         bottom: 0;
         height: 10em;
     }
