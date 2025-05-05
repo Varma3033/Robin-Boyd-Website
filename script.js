@@ -11,9 +11,10 @@ function showSidebar(){
 
 
 /*carousel*/
+
 $('.owl-carousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:50,
     nav:true,
     dots:false,
     autoplay:true,
@@ -22,12 +23,11 @@ $('.owl-carousel').owlCarousel({
         0:{
             items:1
         },
-        600:{
+        768:{
             items:2
         },
         1000:{
             items:3
-        }
+        }    
     }
   })
-
