@@ -73,6 +73,7 @@ header .wrapper {
     color: black;
     margin-left: 0em;
     padding-left: 2em;
+    transition: all 0.3s ease-in-out;
 }
 
 .title:hover {
@@ -80,6 +81,7 @@ header .wrapper {
     margin-left: 2em;
     padding: 0.5em;
     border-radius: 0.5em;
+    transform: scale(1.1);
 }
 
 header nav ul {
@@ -100,12 +102,14 @@ header nav a{
     align-items: center;
     color: black;
     padding: 2em 1em;
+    transition: all 0.3s ease-in-out;
 }
 
 header nav a:hover {
     background-color: rgba(157, 186, 148, 0.25);
     border-radius: 2em;
     padding: 2em 1em; 
+    transform: scale(1.1);
 }
 
 header .sidebar {
@@ -367,11 +371,13 @@ header nav a{
     border: none;
     border-radius: 1em;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
   }
   
   .learn-more:hover {
     background-color: rgba(84, 115, 142, 0.9);
     cursor: pointer;
+    transform: scale(1.1);
   }
 
   @media (max-width: 1023px) {
@@ -383,13 +389,14 @@ header nav a{
         color: black;
         border: none;
         border-radius: 1.5em;
-        transition:
+        transition: all 0.3s ease-in-out;
       }
       
       
       .learn-more:hover {
         background-color: rgba(84, 115, 142, 0.9);
         cursor: pointer;
+        transform: scale(1.1);
       }
   }
 
@@ -800,15 +807,18 @@ header nav a{
     border-radius: 1em;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
+.card:hover {
+    transform: scale(1.05);
+}
 .card .card-image {
     height: 500px;
     width: 500px;
     border-radius: 2em;
     background-position: center;
     background-size: cover;
-
 }
 
 .card .card-title {
@@ -835,11 +845,13 @@ header nav a{
     color: black;
     border: none;
     border-radius: 1em;
+    transition: all 0.3s ease-in-out;
 }
          
 .more-btn:hover {
      background-color: rgba(84, 115, 142, 0.9);
      cursor: pointer;
+     transform: scale(1.1);
 }
 }    
 
@@ -888,8 +900,11 @@ header nav a{
     border-radius: 1em;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
 }
-
+.card:hover {
+    transform: scale(1.05);
+}
 .card .card-image {
     height: 300px;
     width: 350px;
@@ -926,11 +941,13 @@ header nav a{
     color: black;
     border: none;
     border-radius: 1em;
+    transition: all 0.3s ease-in-out;
 }
          
 .more-btn:hover {
      background-color: rgba(84, 115, 142, 0.9);
      cursor: pointer;
+     transform: scale(1.1);
 }
 }    
 
@@ -967,8 +984,11 @@ header nav a{
         border-radius: 1em;
         overflow: hidden;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
     }
-    
+    .card:hover {
+        transform: scale(1.05);
+    }
     .card .card-image {
         height: 250px;
         width: 250px;
@@ -1005,11 +1025,13 @@ header nav a{
         color: black;
         border: none;
         border-radius: 1em;
+        transition: all 0.3s ease-in-out;
     }
              
     .more-btn:hover {
          background-color: rgba(84, 115, 142, 0.9);
          cursor: pointer;
+         transform: scale(1.1);
     }
 }  
 
@@ -1047,8 +1069,11 @@ header nav a{
         border-radius: 1em;
         overflow: hidden;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
     }
-    
+    .card:hover {
+        transform: scale(1.05);
+    }
     .card .card-image {
         height: 250px;
         width: 250px;
@@ -1081,11 +1106,13 @@ header nav a{
         color: black;
         border: none;
         border-radius: 1em;
+        transition: all 0.3s ease-in-out;
     }
              
     .more-btn:hover {
          background-color: rgba(84, 115, 142, 0.9);
          cursor: pointer;
+         transform: scale(1.1);
     }
 }  
 
@@ -1114,15 +1141,17 @@ header nav a{
         position: relative;
         display:flex;
         padding: 1.5em;
-        
         flex-direction: column;
         align-items: center;  
         background-color: whitesmoke;
         border-radius: 1em;
         overflow: hidden;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
     }
-    
+    .card:hover {
+        transform: scale(1.05);
+    }
     .card .card-image {
         height: 250px;
         width: 250px;
@@ -1155,11 +1184,13 @@ header nav a{
         color: black;
         border: none;
         border-radius: 1em;
+        transition: all 0.3s ease-in-out;
     }
              
     .more-btn:hover {
          background-color: rgba(84, 115, 142, 0.9);
          cursor: pointer;
+         transform: scale(1.1);
     }
 }  
 
