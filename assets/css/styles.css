@@ -30,13 +30,39 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media (min-width:769px) {
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../../images/fenner/fenner-house-6.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 100dvh;
+    display: block !important;
 }
+}
+
+@media (max-width:768px) {
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../../images/churchill/churchill-house-21.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100dvh;
+        display: block !important;
+    }
+    }
+
+    @media (max-width:505px) {
+        .hero-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../../images/churchill/churchill-house-21.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 100dvh;
+            display: block !important;
+            width: 505px;
+        }
+        }
 
   /*header*/
 header {
