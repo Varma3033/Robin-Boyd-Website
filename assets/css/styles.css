@@ -334,7 +334,23 @@ header nav a{
 
 }
 
+
 /*homepage*/
+.main-homepage .wrapper {
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.main-homepage {
+    min-height: 100vh;
+    max-width: 100%;
+}
   .learn-more {
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -345,7 +361,6 @@ header nav a{
     border-radius: 1.5em;
     
   }
-  
   
   .learn-more:hover {
     background-color: rgba(84, 115, 142, 0.9);
@@ -371,22 +386,7 @@ header nav a{
       }
   }
 
-  .main-homepage .wrapper {
-    position: absolute;
-    top: 10;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
-.main-homepage {
-    min-height: 100vh;
-    max-width: 100%;
-}
-
 /*about us*/
 .about-heading {
     display: flex;
@@ -407,7 +407,6 @@ header nav a{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 
 .about-image-container {
@@ -462,9 +461,7 @@ header nav a{
     color: black;
     border: none;
     border-radius: 1.5em;
-    
   }
-  
   
   .contact-us:hover {
     background-color: rgba(84, 115, 142, 0.9);
@@ -733,6 +730,7 @@ header nav a{
     
  }
 
+
 /*buildings*/
  .buildings-heading{
     display: flex;
@@ -742,7 +740,6 @@ header nav a{
     text-align: center;
     margin: 2em;
     padding-bottom: 0;
-
 }
 
 @media (min-width: 1441px) {
@@ -822,8 +819,6 @@ header nav a{
 .card:nth-child(3) .card-image {
     background-image: url(../../images/manning-clark-3-anthiny-basheer.jpg);
 }
-
-
 
  @media (max-width: 1920px) {
 
@@ -1070,7 +1065,6 @@ header nav a{
         text-align: center;
         margin: 1.5em;
         padding-bottom: 0;
-    
     }
     .card-container {
         display: flex;
@@ -1134,54 +1128,51 @@ header nav a{
     }
 }  
 
+
 /*CHURCHILL buildings info */
-     
 .main-buildings-info {
        max-width: 100%;
        min-height: 100vh;
        background: white;
        place-items: center;
     }
+
+    .buildings-heading{
+        font-size: ;
+    }
     
     .carousel-container {
-        width: 100vw;
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%;
         height: 575px;
         background-color: rgb(240, 240, 240);
-        justify-content: center;
-        place-items: center;
-        border-radius: 1em;
-        padding: 2em 1em 2em 1em;
-    }
-    
-    .owl-carousel .owl-theme .owl-loaded .owl-drag {
-        padding-bottom: 0;
-    }
-    
-    .owl-carousel .owl-nav {
-        padding: 0;
-        margin-bottom: -8em;
+        padding: 2em 0em 2em 0em;
+        align-items: center;
     }
     
     .owl-carousel{
         position: relative;
     }
     
+    .owl-carousel .owl-nav {
+        margin-bottom: -8em; 
+    }
+    
     .owl-carousel .item {
         height: 600px;
-        width: 100%;  
+        width: 100%;
         align-items: center;
     }
 
     .owl-carousel .item figcaption {
     text-align: center;
+    font-size: 1.25rem;
     }
 
     .owl-carousel .item img{
         height: 80%;
-        object-fit: cover;
+        object-fit:fill;
         border-radius: 2em;
+        align-items: center;
     }
 
     .cp {
@@ -1189,312 +1180,158 @@ header nav a{
         }
 
     .churchill-text{
-        font-size: 2.15rem;
-        padding: 0em 15em 0em 15em;
+        font-size: 2rem;
+        padding: 0em 20em 0em 20em;
         text-align: center;
-    }
-    
-    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
-        position: relative;
-        font-size: 6rem;
-        top: 0%;
-        transform: translateY(-330%);
-        color: black;
-        padding: 0;
+        padding-top: 2em;
     }
     
     .owl-carousel .owl-nav button.owl-next {
-        left: 4.25em;
+        position: relative;
+        font-size: 6rem;
+        transform: translateY(-90%);
+        color: black;
+        align-items: center;
+        justify-content: center;
+        left: 0.5em;
     }
     
+    .owl-carousel .owl-nav button.owl-prev {
+        position: relative;
+        font-size: 6rem;
+        transform: translateY(-90%);
+        color: black;
+        align-items: center;
+        justify-content: center;
+        right: 0.5em;
+    }
+  
     .owl-carousel .owl-nav button.owl-next:hover {
         background: none;
         color: rgba(157, 186, 148);
     }
-    .owl-carousel .owl-nav button.owl-prev {
-        right: 4.25em;
-    }
-    
     .owl-carousel .owl-nav button.owl-prev:hover {
         background: none;
         color:rgba(157, 186, 148)
     }
+
+    .owl-dots {
+        margin-top: -11.25em;
+        align-items: center;
+    }
        
-@media (max-width: 1920px) {
-    .main-buildings-info {
-        max-width: 100%;
-        min-height: 150vh;
-        background: white;
-        place-items: center;
-     }
- 
-     .churchill-text{
-         font-size: 2rem;
-         padding: 0em 15em 0em 15em;
-         text-align: center;
+@media (max-width:1920px) {
+     .buildings-heading{
+         font-size: ;
      }
      
-     .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+     .carousel-container {
+         width: 100%;
+         height: 500px;
+         background-color: rgb(240, 240, 240);
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+     }
+     
+     .owl-carousel{
          position: relative;
-         font-size: 6rem;
-         top: 0%;
-         transform: translateY(-340%);
-         color: black;
-         padding: 0;
+     }
+     
+     .owl-carousel .owl-nav {
+         margin-bottom: -8em; 
+     }
+
+     .owl-dots {
+        margin-top: -10em;
+        align-items: center;
+    }
+     
+     .owl-carousel .item {
+         height:500px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+     text-align: center;
+     font-size: 1.15rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:fill;
+         border-radius: 2em;
+         align-items: center;
+     }
+ 
+     .cp {
+         padding-bottom: 1em;
+         }
+ 
+     .churchill-text{
+         font-size: 1.5rem;
+         padding: 0em 20em 0em 20em;
+         text-align: center;
+         padding-top: 2em;
+         padding-bottom: 1em;
      }
      
      .owl-carousel .owl-nav button.owl-next {
-         left: 3.15em;
+         position: relative;
+         font-size: 6rem;
+         transform: translateY(-90%);
+         color: black;
+         align-items: center;
+         justify-content: center;
+         left: 0.5em;
      }
      
      .owl-carousel .owl-nav button.owl-prev {
-         right: 3.15em;
+         position: relative;
+         font-size: 6rem;
+         transform: translateY(-90%);
+         color: black;
+         align-items: center;
+         justify-content: center;
+         right: 0.5em;
      }
-
-    }
-
-@media (max-width: 1440px) {
-    .main-buildings-info {
-        max-width: 100%;
-        min-height: 100vh;
-        background: white;
-        place-items: center;
-     }
-        
-.carousel-container {
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    height: 375px;
-    background-color: rgb(240, 240, 240);
-    justify-content: center;
-    place-items: center;
-    border-radius: 1em;
-    padding: 2em 1em 2em 1em;
-    }
- 
-    .owl-carousel .item {
-        height: 350px;
-        width: 100%;  
-        align-items: center;
-    }
-    .owl-carousel .item figcaption {
-    text-align: center;
-    font-size: 0.9rem;
-    }
-
-    .churchill-text{
-        font-size: 1.25rem;
-        padding: 0 15em 0 15em;
-        text-align: center;
-        margin-top: 2em;
-    }
-    
-    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
-        position: relative;
-        font-size: 5rem;
-        top: 0%;
-        transform: translateY(-275%);
-        color: black;
-        padding: 0;
-    }
-    
-    .owl-carousel .owl-nav button.owl-next {
-        left: 2.8em;
-    }
-    
-    .owl-carousel .owl-nav button.owl-prev {
-        right: 2.8em;
-    }
-    
-    }
-
-@media (max-width: 1200px) {
-    .main-buildings-info {
-       max-width: 100%;
-       min-height: 100vh;
-       background: white;
-       place-items: center;
-    }
-    
-    .owl-carousel .item figcaption {
-    text-align: center;
-    font-size: 0.75rem;
-    }
-    .owl-carousel .item img{
-        height: 80%;
-        object-fit: cover;
-        border-radius: 1.25em;
-    }
-    .churchill-text{
-        font-size: 1.25rem;
-        padding: 0 10em 0 10em;
-        text-align: center;
-        margin-top: 2em;
-    }
-    
-    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
-        position: relative;
-        font-size: 5rem;
-        top: 0%;
-        transform: translateY(-275%);
-        color: black;
-        padding: 0;
-    }
-    
-    .owl-carousel .owl-nav button.owl-next {
-        left: 2.35em;
-    }
-    
-    .owl-carousel .owl-nav button.owl-next:hover {
-        background: none;
-        color: rgba(157, 186, 148);
-    }
-    .owl-carousel .owl-nav button.owl-prev {
-        right: 2.35em;
-    }
-    
-    .owl-carousel .owl-nav button.owl-prev:hover {
-        background: none;
-        color:rgba(157, 186, 148)
-    }
-    }
-
-@media (max-width: 1024px) {
-        .main-buildings-info {
-            max-width: 100%;
-            min-height: 100vh;
-            background: white;
-            place-items: center;
-         }
-         
-         .carousel-container {
-             max-width: 100vw;
-             display: flex;
-             flex-wrap: wrap;
-             height: 375px;
-             background-color: rgb(240, 240, 240);
-             justify-content: center;
-             place-items: center;
-             border-radius: 1em;
-             padding: 2em 1em 2em 1em;
-         }
-         
-         .owl-carousel .owl-nav {
-             padding: 0;
-             margin-bottom: -9em;
-         }
-       
-         .churchill-text{
-             font-size: 1.23rem;
-             padding: 0 10em 0 10em;
-             text-align: center;
-             margin-top: 2em;
-         }
-         
-         .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
-             position: relative;
-             font-size: 5rem;
-             top: 0%;
-             transform: translateY(-275%);
-             color: black;
-             padding: 0;
-         }
-         
-         .owl-carousel .owl-nav button.owl-next {
-             left: 2em;
-         }
-       
-         .owl-carousel .owl-nav button.owl-prev {
-             right: 2em;
-         }
-  
-         }
-
-@media (max-width: 768px) {
-             .main-buildings-info {
-                min-width: 100%;
-                min-height: 100vh;
-                background: white;
-                place-items: center;
-             }
-             
-            .owl-carousel .owl-nav {
-                padding: 0;
-                margin-bottom: 1%;
-            }
-            
-             .churchill-text{
-                 font-size: 1.2rem;
-                 padding: 0 1.5em 0 1.5em;
-                 text-align: center;
-             }
-             
-             .owl-carousel .owl-nav button.owl-next {
-                 left: 4.25em;
-                 display: none;
-             }
-            
-             .owl-carousel .owl-nav button.owl-prev {
-                 right: 4.25em;
-                 display: none;
-             }
-            }
-@media (max-width: 425px) {
-        .main-buildings-info {
-                   min-width: 100%;
-                   min-height: 100vh;
-                   background: white;
-                   place-items: center;
-                }
-                
-        .carousel-container {
-                    width: 100vw;
-                    display: flex;
-                    flex-wrap: wrap;
-                    height: 400px;
-                    background-color: rgb(240, 240, 240);
-                    justify-content: center;
-                    place-items: center;
-                    border-radius: 1em;
-                    padding: 2em 1em 2em 1em;
-                }
-                
-        .owl-carousel .owl-nav {
-                   padding: 0;
-                   margin-bottom: -1.5em;
-               }
-                
-        .owl-carousel .item {
-                    height: 375px;
-                    width: 100%;  
-                    align-items: center;
-                }
-            
-                .owl-carousel .item figcaption {
-                text-align: center;
-                font-size: 0.75rem;
-                }
    
-        .churchill-text{
-                    font-size: 0.8rem;
-                    padding: 0 1.5em 0 1.5em;
-                    text-align: center;
-                }
-                
-        .owl-carousel .owl-nav button.owl-next {
-                    left: 4.25em;
-                    display: none;
-                }
-               
-        .owl-carousel .owl-nav button.owl-prev {
-                    right: 4.25em;
-                    display: none;
-                }
-               }
-               
-/*footer*/
+     .owl-carousel .owl-nav button.owl-next:hover {
+         background: none;
+         color: rgba(157, 186, 148);
+     }
+     .owl-carousel .owl-nav button.owl-prev:hover {
+         background: none;
+         color:rgba(157, 186, 148)
+     }
+    }
 
+@media (min-width:1441px) {
+    
+}
+
+@media (max-width:1440px) {
+    
+}
+
+@media (max-width:1200px) {
+    
+}
+
+@media (max-width:1024px) {
+    
+}
+
+@media (max-width:768px) {
+    
+}
+
+@media (max-width:425px) {
+    
+}
+
+
+/*footer*/
 .footer {
     background-color: rgba(84, 115, 142, 0.9);
     bottom: 0;
@@ -1513,7 +1350,6 @@ footer .socials a {
     padding: 0.3em 0.5em 0.3em 0.5em;
     border-radius: 0.5em;
     color: black;
-
 }
 
 footer .socials a:hover {

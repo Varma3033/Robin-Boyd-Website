@@ -16,7 +16,11 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:50,
     nav:true,
-    dots:false,
+    dots:true,
+    dotsEach:true,
+    autoWidth:true,
+    autoHeight:true,
+    center:true,
     autoplay:true,
     autoplayTimeout:4000,
     responsive:{
