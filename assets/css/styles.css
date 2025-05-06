@@ -52,18 +52,6 @@ body {
     }
     }
 
-    @media (max-width:505px) {
-        .hero-image {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../../images/churchill/churchill-house-21.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            min-height: 100dvh;
-            display: block !important;
-            width: 505px;
-        }
-        }
-
   /*header*/
 header {
     background-color: rgba(84, 115, 142, 0.75);
