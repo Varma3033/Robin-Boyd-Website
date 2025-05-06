@@ -107,8 +107,6 @@ header .sidebar {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    
-    
 }
 
 header .sidebar li {
@@ -117,7 +115,6 @@ header .sidebar li {
     text-align: center;
     padding: 2em;
     text-decoration: none;
-    
 }
 
 header .sidebar a {
@@ -135,7 +132,6 @@ header .menu-button {
 header .cancel-menu {
     align-items: right;
     margin-right: auto;
-
 }
 
 @media (min-width: 1440px) {
@@ -144,24 +140,21 @@ header .cancel-menu {
         display: none;
     }
     h1 {
-        font-size: 3rem;
-        
+        font-size: 3rem; 
     }
     h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }   
-
 }
 
 @media (min-width: 1024px) {
-    
     header .menu-button {
         display: none;
     }
     h1 {
-        font-size: 2rem;
-        padding: 0;
+        font-size: 2.5rem;
     }
+
     h2 {
     font-size: 1.5rem;
 }   
@@ -183,7 +176,6 @@ header nav a{
 @media (max-width: 1023px) {
     .hideOnMobile {
         display: none;
-        
     }
 
     header .menu-button {
@@ -223,15 +215,11 @@ header nav a{
     }
     .title:hover {
         background-color: rgb(157, 186, 148, 0.75);
-        
-        
         border-radius: 1em;
     }
     
     header nav li {
-        
         margin-right: 1em;
-        
     }
     
     header nav a{
@@ -255,11 +243,9 @@ header nav a{
 
     header .sidebar li {
         width: 100%;
-        
         padding: 2em;
         
     }  
-
 }   
 
 @media (max-width: 425px) {
@@ -273,9 +259,7 @@ header nav a{
 
     header .sidebar li {
         width: 100%;
-        
         padding: 2em 0 2em 0;
-       
         }
         
 
@@ -388,7 +372,7 @@ header nav a{
 
   
 /*about us*/
-.about-heading {
+.page-heading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,7 +453,7 @@ header nav a{
   }
 
  @media (max-width: 1439px) {
-    .about-heading {
+    .page-heading {
     
         display: flex;
         justify-content: center;
@@ -556,7 +540,7 @@ header nav a{
 
  @media (max-width: 1023px) {
 
-    .about-heading {
+    .page-heading {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -644,7 +628,7 @@ header nav a{
             
  @media (max-width: 425px) {
 
-    .about-heading {
+    .page-heading {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -732,7 +716,7 @@ header nav a{
 
 
 /*buildings*/
- .buildings-heading{
+ .page-heading{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -822,7 +806,7 @@ header nav a{
 
  @media (max-width: 1920px) {
 
-.buildings-heading{
+.page-heading{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -901,7 +885,7 @@ header nav a{
 
 @media (max-width: 1024px) {
 
-    .buildings-heading{
+    .page-heading{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -980,7 +964,7 @@ header nav a{
 
 @media (max-width: 1023px) {
 
-    .buildings-heading{
+    .page-heading{
         font-size: 0.75rem;
         display: flex;
         justify-content: center;
@@ -1056,7 +1040,7 @@ header nav a{
 
 @media (max-width: 425px) {
 
-    .buildings-heading{
+    .page-heading{
         font-size: 0.75rem;
         display: flex;
         justify-content: center;
@@ -1137,7 +1121,7 @@ header nav a{
        place-items: center;
     }
 
-    .buildings-heading{
+    .page-heading{
         font-size: ;
     }
     
@@ -1151,12 +1135,13 @@ header nav a{
     
     .owl-carousel{
         position: relative;
+        align-items: center;
     }
     
     .owl-carousel .owl-nav {
-        margin-bottom: -8em; 
+        margin-bottom: -10em; 
     }
-    
+
     .owl-carousel .item {
         height: 600px;
         width: 100%;
@@ -1170,7 +1155,7 @@ header nav a{
 
     .owl-carousel .item img{
         height: 80%;
-        object-fit:fill;
+        object-fit:cover;
         border-radius: 2em;
         align-items: center;
     }
@@ -1182,27 +1167,23 @@ header nav a{
     .churchill-text{
         font-size: 2rem;
         padding: 0em 20em 0em 20em;
-        text-align: center;
+        text-align: left;
         padding-top: 2em;
     }
     
     .owl-carousel .owl-nav button.owl-next {
         position: relative;
         font-size: 6rem;
-        transform: translateY(-90%);
+        transform: translateY(-75%);
         color: black;
-        align-items: center;
-        justify-content: center;
         left: 0.5em;
     }
     
     .owl-carousel .owl-nav button.owl-prev {
         position: relative;
         font-size: 6rem;
-        transform: translateY(-90%);
+        transform: translateY(-75%);
         color: black;
-        align-items: center;
-        justify-content: center;
         right: 0.5em;
     }
   
@@ -1214,52 +1195,45 @@ header nav a{
         background: none;
         color:rgba(157, 186, 148)
     }
-
-    .owl-dots {
-        margin-top: -11.25em;
-        align-items: center;
-    }
-       
+    
 @media (max-width:1920px) {
-     .buildings-heading{
-         font-size: ;
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 100vh;
+        background: white;
+        place-items: center;
      }
-     
      .carousel-container {
          width: 100%;
-         height: 500px;
+         height: 525px;
          background-color: rgb(240, 240, 240);
          padding: 2em 0em 2em 0em;
-         align-items: center;
+        align-items: center;
      }
-     
+
      .owl-carousel{
-         position: relative;
+        position: relative;
+        align-items: center;
      }
      
      .owl-carousel .owl-nav {
-         margin-bottom: -8em; 
+         margin-bottom: -9em; 
      }
-
-     .owl-dots {
-        margin-top: -10em;
-        align-items: center;
-    }
-     
+ 
      .owl-carousel .item {
-         height:500px;
+         height: 525px;
          width: 100%;
          align-items: center;
      }
  
      .owl-carousel .item figcaption {
      text-align: center;
-     font-size: 1.15rem;
+     font-size: 1rem;
      }
  
      .owl-carousel .item img{
          height: 80%;
-         object-fit:fill;
+         object-fit:cover;
          border-radius: 2em;
          align-items: center;
      }
@@ -1269,65 +1243,705 @@ header nav a{
          }
  
      .churchill-text{
-         font-size: 1.5rem;
-         padding: 0em 20em 0em 20em;
-         text-align: center;
-         padding-top: 2em;
-         padding-bottom: 1em;
+         font-size: 2rem;
+         padding: 0em 15em 0em 15em;
+         text-align: left;
+         padding-top: 1.5em;
      }
      
      .owl-carousel .owl-nav button.owl-next {
          position: relative;
          font-size: 6rem;
-         transform: translateY(-90%);
+         transform: translateY(-64%);
          color: black;
-         align-items: center;
-         justify-content: center;
          left: 0.5em;
      }
      
      .owl-carousel .owl-nav button.owl-prev {
          position: relative;
          font-size: 6rem;
-         transform: translateY(-90%);
+         transform: translateY(-64%);
          color: black;
-         align-items: center;
-         justify-content: center;
          right: 0.5em;
-     }
-   
-     .owl-carousel .owl-nav button.owl-next:hover {
-         background: none;
-         color: rgba(157, 186, 148);
-     }
-     .owl-carousel .owl-nav button.owl-prev:hover {
-         background: none;
-         color:rgba(157, 186, 148)
      }
     }
 
 @media (min-width:1441px) {
-    
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 100vh;
+        background: white;
+        place-items: center;
+     }
+ 
+     .buildings-heading{
+         font-size: 0.75rem;
+     }
+     
+     .carousel-container {
+         width: 100%;
+         height: 350px;
+         background-color: rgb(240, 240, 240);
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+     }
+
+     .owl-carousel{
+        position: relative;
+        align-items: center;
+    }
+
+     .owl-carousel .owl-nav {
+         margin-bottom: -8.4em; 
+     }
+ 
+     .owl-carousel .item {
+         height: 350px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+        text-align: center;
+        font-size: 0.9rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:cover;
+         border-radius: 2em;
+         align-items: center;
+     }
+
+     .cp {
+        padding-bottom: 1em;
+        }
+
+     .churchill-text{
+         font-size: 1.5rem;
+         padding: 0em 25em 0em 25em;
+         text-align: left;
+         padding-top: 2em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-next {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         left: 0.6em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-prev {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         right: 0.6em;
+     }
+
+     .owl-carousel .owl-nav button.owl-next:hover {
+        background: none;
+        color: rgba(157, 186, 148);
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background: none;
+        color:rgba(157, 186, 148)
+    }
 }
 
 @media (max-width:1440px) {
-    
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 100vh;
+        background: white;
+        place-items: center;
+     }
+ 
+     .buildings-heading{
+         font-size: 0.75rem;
+     }
+     
+     .carousel-container {
+         width: 100%;
+         height: 350px;
+         background-color: rgb(240, 240, 240);
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+     }
+
+     .owl-carousel{
+        position: relative;
+        align-items: center;
+    }
+
+     .owl-carousel .owl-nav {
+         margin-bottom: -8.4em; 
+     }
+ 
+     .owl-carousel .item {
+         height: 350px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+        text-align: center;
+        font-size: 0.9rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:cover;
+         border-radius: 2em;
+         align-items: center;
+     }
+
+     .cp {
+        padding-bottom: 1em;
+        }
+
+     .churchill-text{
+         font-size: 1.2rem;
+         padding: 0em 20em 0em 20em;
+         text-align: left;
+         padding-top: 1em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-next {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         left: 0.6em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-prev {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         right: 0.6em;
+     }
+
+     .owl-carousel .owl-nav button.owl-next:hover {
+        background: none;
+        color: rgba(157, 186, 148);
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background: none;
+        color:rgba(157, 186, 148)
+    }
 }
 
-@media (max-width:1200px) {
-    
+@media (min-width:1200px) {
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 100vh;
+        background: white;
+        place-items: center;
+     }
+ 
+     .buildings-heading{
+         font-size: 0.75rem;
+     }
+     
+     .carousel-container {
+         width: 100%;
+         height: 350px;
+         background-color: rgb(240, 240, 240);
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+     }
+
+     .owl-carousel{
+        position: relative;
+        align-items: center;
+    }
+
+     .owl-carousel .owl-nav {
+         margin-bottom: -8.4em; 
+     }
+ 
+     .owl-carousel .item {
+         height: 350px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+        text-align: center;
+        font-size: 0.9rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:cover;
+         border-radius: 2em;
+         align-items: center;
+     }
+
+     .cp {
+        padding-bottom: 1em;
+        }
+
+     .churchill-text{
+         font-size: 1.2rem;
+         padding: 0em 15em 0em 15em;
+         text-align: left;
+         padding-top: 1em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-next {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         left: 0.6em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-prev {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         right: 0.6em;
+     }
+
+     .owl-carousel .owl-nav button.owl-next:hover {
+        background: none;
+        color: rgba(157, 186, 148);
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background: none;
+        color:rgba(157, 186, 148)
+    }
 }
 
-@media (max-width:1024px) {
-    
+@media (min-width:1024px) {
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 100vh;
+        background: white;
+        place-items: center;
+     }
+ 
+     .buildings-heading{
+         font-size: 0.75rem;
+     }
+     
+     .carousel-container {
+         width: 100%;
+         height: 350px;
+         background-color: rgb(240, 240, 240);
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+     }
+
+     .owl-carousel{
+        position: relative;
+        align-items: center;
+    }
+
+     .owl-carousel .owl-nav {
+         margin-bottom: -8.4em; 
+     }
+ 
+     .owl-carousel .item {
+         height: 350px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+        text-align: center;
+        font-size: 0.9rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:cover;
+         border-radius: 2em;
+         align-items: center;
+     }
+
+     .cp {
+        padding-bottom: 1em;
+        }
+
+     .churchill-text{
+         font-size: 1.2rem;
+         padding: 0em 10em 0em 10em;
+         text-align: left;
+         padding-top: 1em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-next {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         left: 0.6em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-prev {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         right: 0.6em;
+     }
+
+     .owl-carousel .owl-nav button.owl-next:hover {
+        background: none;
+        color: rgba(157, 186, 148);
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background: none;
+        color:rgba(157, 186, 148)
+    }
 }
 
-@media (max-width:768px) {
-    
+@media (max-width:1023px) {
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 100vh;
+        background: white;
+        place-items: center;
+     }
+ 
+     .buildings-heading{
+         font-size: 0.75rem;
+     }
+     
+     .carousel-container {
+         width: 100%;
+         height: 350px;
+         background-color: rgb(240, 240, 240);
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+     }
+
+     .owl-carousel{
+        position: relative;
+        align-items: center;
+    }
+
+     .owl-carousel .owl-nav {
+         margin-bottom: -1em; 
+     }
+ 
+     .owl-carousel .item {
+         height: 350px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+        text-align: center;
+        font-size: 0.9rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:cover;
+         border-radius: 2em;
+         align-items: center;
+     }
+
+     .cp {
+        padding-bottom: 1em;
+        }
+
+     .churchill-text{
+         font-size: 1.2rem;
+         padding: 0em 10em 0em 10em;
+         text-align: left;
+         padding-top: 1em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-next {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         left: 0.6em;
+         display: none;
+     }
+     
+     .owl-carousel .owl-nav button.owl-prev {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         right: 0.6em;
+         display: none;
+     }
+
+     .owl-carousel .owl-nav button.owl-next:hover {
+        background: none;
+        color: rgba(157, 186, 148);
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background: none;
+        color:rgba(157, 186, 148)
+    }
 }
 
-@media (max-width:425px) {
-    
+@media (max-width:960px) {
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 100vh;
+        background: white;
+        place-items: center;
+     }
+ 
+     .buildings-heading{
+         font-size: 0.75rem;
+     }
+     
+     .carousel-container {
+         width: 100%;
+         height: 350px;
+         background-color: rgb(240, 240, 240);
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+     }
+
+     .owl-carousel{
+        position: relative;
+        align-items: center;
+    }
+
+     .owl-carousel .owl-nav {
+         margin-bottom: -1em; 
+     }
+ 
+     .owl-carousel .item {
+         height: 350px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+        text-align: center;
+        font-size: 0.9rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:cover;
+         border-radius: 2em;
+         align-items: center;
+     }
+
+     .cp {
+        padding-bottom: 1em;
+        }
+
+     .churchill-text{
+         font-size: 1.1em;
+         padding: 0em 5em 0em 5em;
+         text-align: left;
+         padding-top: 1em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-next {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         left: 0.6em;
+         display: none;
+     }
+     
+     .owl-carousel .owl-nav button.owl-prev {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         right: 0.6em;
+         display: none;
+     }
+
+     .owl-carousel .owl-nav button.owl-next:hover {
+        background: none;
+        color: rgba(157, 186, 148);
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background: none;
+        color:rgba(157, 186, 148)
+    }
+}
+
+@media (max-width:600px) {
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 100vh;
+        background: white;
+        place-items: center;
+     }
+ 
+     .buildings-heading{
+         font-size: 0.75rem;
+     }
+     
+     .carousel-container {
+         width: 100%;
+         height: 350px;
+         background-color: rgb(240, 240, 240);
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+     }
+
+     .owl-carousel{
+        position: relative;
+        align-items: center;
+    }
+
+     .owl-carousel .owl-nav {
+         margin-bottom: -1em; 
+     }
+ 
+     .owl-carousel .item {
+         height: 350px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+        text-align: center;
+        font-size: 0.9rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:cover;
+         border-radius: 2em;
+         align-items: center;
+     }
+
+     .cp {
+        padding-bottom: 1em;
+        }
+
+     .churchill-text{
+         font-size: 1em;
+         padding: 0em 5em 0em 5em;
+         text-align: left;
+         padding-top: 1em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-next {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         left: 0.6em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-prev {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         right: 0.6em;
+     }
+
+     .owl-carousel .owl-nav button.owl-next:hover {
+        background: none;
+        color: rgba(157, 186, 148);
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background: none;
+        color:rgba(157, 186, 148)
+    }
+}
+
+@media (max-width:480px) {
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 105vh;
+        background: white;
+        place-items: center;
+     }
+ 
+     .buildings-heading{
+         font-size: 0.25rem;
+     }
+     
+     .carousel-container {
+         width: 100%;
+         height: 350px;
+         background-color: rgb(240, 240, 240);
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+     }
+
+     .owl-carousel{
+        position: relative;
+        align-items: center;
+    }
+
+     .owl-carousel .owl-nav {
+         margin-bottom: -2em; 
+     }
+ 
+     .owl-carousel .item {
+         height: 350px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+        text-align: center;
+        font-size: 0.5rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:fill;
+         border-radius: 2em;
+         align-items: center;
+     }
+
+     .cp {
+        padding-bottom: 1em;
+        }
+
+     .churchill-text{
+         font-size: 0.9em;
+         padding: 0em 2em 0em 2em;
+         text-align: left;
+         padding-top: 0em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-next {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         left: 0.6em;
+         display: none;
+     }
+     
+     .owl-carousel .owl-nav button.owl-prev {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         right: 0.6em;
+         display: none;
+     }
+
+     .owl-carousel .owl-nav button.owl-next:hover {
+        background: none;
+        color: rgba(157, 186, 148);
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background: none;
+        color:rgba(157, 186, 148)
+    }
 }
 
 
@@ -1341,7 +1955,6 @@ header nav a{
 footer .socials {
     text-align: center;
     padding-top: 3em;
-    
 }
 footer .socials a {
     font-size: 2rem;
@@ -1374,7 +1987,6 @@ footer ul li a {
     padding: 0.5em;
 }
 
-
 footer ul li a:hover {
     background-color: rgba(157, 186, 148);
     color: black;
@@ -1385,7 +1997,6 @@ footer .copyright {
     text-align: center;
     padding: 1em;
     color: black;
-    
 }
 
 @media (min-width: 1440px) {
