@@ -62,10 +62,10 @@ header .wrapper {
 }
 
 .title:hover {
-    background-color: rgb(157, 186, 148, 0.75);
+    background-color: rgb(157, 186, 148, 0.25);
     margin-left: 2em;
-    padding: 1em;
-    border-radius: 1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
 }
 
 header nav ul {
@@ -101,12 +101,13 @@ header .sidebar {
     height: 100vh;
     width: 250px;
     z-index: 998;
-    background-color: rgba(84, 115, 142, 1);
+    background-color: rgba(84, 115, 142, 0.5);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    backdrop-filter: blur(10px);
 }
 
 header .sidebar li {
@@ -214,7 +215,7 @@ header nav a{
         
     }
     .title:hover {
-        background-color: rgb(157, 186, 148, 0.75);
+        background-color: rgb(157, 186, 148, 0.25);
         border-radius: 1em;
     }
     
@@ -238,13 +239,16 @@ header nav a{
 
     header .sidebar {
         width: 100%;
-        
     }
 
     header .sidebar li {
         width: 100%;
         padding: 2em;
-        
+    }  
+    header .sidebar li:hover {
+        width: 100%;
+        padding: 2em;
+        background-color: rgba(157, 186, 148, 0.25);
     }  
 }   
 
@@ -292,7 +296,7 @@ header nav a{
     }
     .title:hover {
         display: none;
-        background-color: rgb(157, 186, 148, 0.75);
+        background-color: rgb(157, 186, 148, 0.25);
         margin-left: 2em;
         padding: 1em;
         border-radius: 1em;
@@ -316,6 +320,11 @@ header nav a{
         padding: 1em 1em;
     }
 
+    header .sidebar li:hover {
+        width: 100%;
+        padding: 2em;
+        background-color: rgba(157, 186, 148, 0.25);
+    }  
 }
 
 
@@ -342,7 +351,7 @@ header nav a{
     background-color: rgba(157, 186, 148, 0.9);
     color: black;
     border: none;
-    border-radius: 1.5em;
+    border-radius: 1em;
     
   }
   
@@ -773,7 +782,7 @@ header nav a{
     margin-bottom: 2em;
     flex-direction: column;
     align-items: center;  
-    background-color: rgb(240, 240, 240);
+    background-color: whitesmoke;
     border-radius: 1em;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -821,15 +830,15 @@ header nav a{
 }    
 
 .card:nth-child(1) .card-image {
-    background-image: url(images\fenner\fenner-house-6.JPG);
+    background-image: url(../../images/fenner/fenner-house-6.JPG)
 }
 
 .card:nth-child(2) .card-image {
-    background-image: url(images\churchill\churchill-house-21.jpg);
+    background-image: url(../../images/churchill/churchill-house-21.jpg)
 }
 
 .card:nth-child(3) .card-image {
-    background-image: url(images\manning-clark\manning-clark-3-anthiny-basheer.jpg);
+    background-image: url(../../images/manning-clark/manning-clark-3-anthiny-basheer.jpg)
 }
 
  @media (max-width: 1920px) {
@@ -861,7 +870,7 @@ header nav a{
     margin-bottom: 2em;
     flex-direction: column;
     align-items: center;  
-    background-color: rgb(240, 240, 240);
+    background-color: whitesmoke;
     border-radius: 1em;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -940,7 +949,7 @@ header nav a{
         margin-bottom: 2em;
         flex-direction: column;
         align-items: center;  
-        background-color: rgb(240, 240, 240);
+        background-color: whitesmoke;
         border-radius: 1em;
         overflow: hidden;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -1020,7 +1029,7 @@ header nav a{
         margin-bottom: 2em;
         flex-direction: column;
         align-items: center;  
-        background-color: rgb(240, 240, 240);
+        background-color: whitesmoke;
         border-radius: 1em;
         overflow: hidden;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -1094,7 +1103,7 @@ header nav a{
         
         flex-direction: column;
         align-items: center;  
-        background-color: rgb(240, 240, 240);
+        background-color: whitesmoke;
         border-radius: 1em;
         overflow: hidden;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -1156,9 +1165,10 @@ header nav a{
     .carousel-container {
         width: 100%;
         height: 575px;
-        background-color: rgb(240, 240, 240);
+        background-color: whitesmoke;
         padding: 2em 0em 2em 0em;
         align-items: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     }
     
     .owl-carousel{
@@ -1246,9 +1256,10 @@ header nav a{
      .carousel-container {
          width: 100%;
          height: 525px;
-         background-color: rgb(240, 240, 240);
+         background-color: whitesmoke;
          padding: 2em 0em 2em 0em;
         align-items: center;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
      }
 
      .owl-carousel{
@@ -1327,9 +1338,10 @@ header nav a{
      .carousel-container {
          width: 100%;
          height: 350px;
-         background-color: rgb(240, 240, 240);
+         background-color: whitesmoke;
          padding: 2em 0em 2em 0em;
          align-items: center;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
      }
 
      .owl-carousel{
@@ -1415,9 +1427,10 @@ header nav a{
      .carousel-container {
          width: 100%;
          height: 350px;
-         background-color: rgb(240, 240, 240);
+         background-color: whitesmoke;
          padding: 2em 0em 2em 0em;
          align-items: center;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
      }
 
      .owl-carousel{
@@ -1503,9 +1516,10 @@ header nav a{
      .carousel-container {
          width: 100%;
          height: 350px;
-         background-color: rgb(240, 240, 240);
+         background-color: whitesmoke;
          padding: 2em 0em 2em 0em;
          align-items: center;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
      }
 
      .owl-carousel{
@@ -1591,9 +1605,10 @@ header nav a{
      .carousel-container {
          width: 100%;
          height: 350px;
-         background-color: rgb(240, 240, 240);
+         background-color: whitesmoke;
          padding: 2em 0em 2em 0em;
          align-items: center;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
      }
 
      .owl-carousel{
@@ -1679,9 +1694,10 @@ header nav a{
      .carousel-container {
          width: 100%;
          height: 350px;
-         background-color: rgb(240, 240, 240);
+         background-color: whitesmoke;
          padding: 2em 0em 2em 0em;
          align-items: center;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
      }
 
      .owl-carousel{
@@ -1769,9 +1785,10 @@ header nav a{
      .carousel-container {
          width: 100%;
          height: 350px;
-         background-color: rgb(240, 240, 240);
+         background-color: whitesmoke;
          padding: 2em 0em 2em 0em;
          align-items: center;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
      }
 
      .owl-carousel{
@@ -1859,9 +1876,10 @@ header nav a{
      .carousel-container {
          width: 100%;
          height: 350px;
-         background-color: rgb(240, 240, 240);
+         background-color: whitesmoke;
          padding: 2em 0em 2em 0em;
          align-items: center;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
      }
 
      .owl-carousel{
@@ -1947,9 +1965,10 @@ header nav a{
      .carousel-container {
          width: 100%;
          height: 350px;
-         background-color: rgb(240, 240, 240);
+         background-color: whitesmoke;
          padding: 2em 0em 2em 0em;
          align-items: center;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
      }
 
      .owl-carousel{
@@ -2034,7 +2053,7 @@ header nav a{
 }
 
 .contact-container h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 2em;
     color: black;
 }
@@ -2135,14 +2154,13 @@ footer .socials {
 footer .socials a {
     font-size: 2rem;
     display: inline-block;
-    border: 0.1em solid black;
     padding: 0.3em 0.5em 0.3em 0.5em;
     border-radius: 0.5em;
     color: black;
 }
 
 footer .socials a:hover {
-    background-color: rgba(157, 186, 148);
+    background-color: rgba(157, 186, 148, 0.25);
 }
 
 footer ul {
@@ -2164,7 +2182,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    background-color: rgba(157, 186, 148);
+    background-color: rgba(157, 186, 148, 0.25);
     color: black;
     padding: 0.5em;
     border-radius: 0.5em;
@@ -2196,7 +2214,6 @@ footer .copyright {
     footer .socials a {
         font-size: 1.5rem;
         display: inline-block;
-        border: 0.1em solid black;
         padding: 0.3em 0.5em 0.3em 0.5em;
         border-radius: 0.5em;
         color: black;
@@ -2204,7 +2221,7 @@ footer .copyright {
     }
     
     footer .socials a:hover {
-        background-color: rgba(157, 186, 148);
+        background-color: rgba(157, 186, 148, 0.25);
     }
     
     footer ul {
@@ -2227,7 +2244,7 @@ footer .copyright {
     
     
     footer ul li a:hover {
-        background-color: rgba(157, 186, 148);
+        background-color: rgba(157, 186, 148, 0.25);
         color: black;
         padding: 0.5em;
         border-radius: 0.5em;
@@ -2257,7 +2274,6 @@ footer .copyright {
     footer .socials a {
         font-size: 1.25rem;
         display: inline-block;
-        border: 0.1em solid black;
         padding: 0.3em 0.5em 0.3em 0.5em;
         border-radius: 0.5em;
         color: black;
@@ -2265,7 +2281,7 @@ footer .copyright {
     }
     
     footer .socials a:hover {
-        background-color: rgba(157, 186, 148);
+        background-color: rgba(157, 186, 14, 0.25);
     }
     
     footer ul {
@@ -2288,7 +2304,7 @@ footer .copyright {
     
     
     footer ul li a:hover {
-        background-color: rgba(157, 186, 148);
+        background-color: rgba(157, 186, 148, 0.25);
         color: black;
         padding: 0.5em;
         border-radius: 0.5em;
@@ -2300,8 +2316,6 @@ footer .copyright {
         font-size: 0.75rem;
         
     }
-    
-
 }
 
 @media (max-width: 505px) {
@@ -2333,7 +2347,6 @@ footer .copyright {
     footer .socials a {
         font-size: 1rem;
         display: inline-block;
-        border: 0.1em solid black;
         padding: 0.3em 0.5em 0.3em 0.5em;
         border-radius: 0.5em;
         color: black;
@@ -2341,7 +2354,7 @@ footer .copyright {
     }
     
     footer .socials a:hover {
-        background-color: rgba(157, 186, 148);
+        background-color: rgba(157, 186, 148, 0.25);
     }
     
     footer ul {
@@ -2362,9 +2375,8 @@ footer .copyright {
         padding: 0.5em 0;
     }
     
-    
     footer ul li a:hover {
-        background-color: rgba(157, 186, 148);
+        background-color: rgba(157, 186, 148, 0.25);
         color: black;
         padding: 0.5em;
         border-radius: 0.5em;
@@ -2376,5 +2388,4 @@ footer .copyright {
         font-size: 0.6rem;
         
     }
-
 }
