@@ -784,76 +784,11 @@ header nav a{
     padding-bottom: 0;
 }
 
-@media (min-width: 1441px) {
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5em;
-
+.main-buildings {
+    min-height: 100vh;
+    width: 100%;
 }
-
-.card {
-    width: 600px;
-    height: 70vh;
-    position: relative;
-    display:flex;
-    padding: 4em;
-    margin-bottom: 2em;
-    flex-direction: column;
-    align-items: center;  
-    background-color: whitesmoke;
-    border-radius: 1em;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-.card .card-image {
-    height: 500px;
-    width: 500px;
-    border-radius: 2em;
-    background-position: center;
-    background-size: cover;
-}
-
-.card .card-title {
-    text-align: center;
-    padding: 20px 10px;
-    font-size: 1rem;
-    color: black
-}
-
-.card .card-text {
-    font-size: 1.25rem;
-    text-align: center;
-    padding-bottom: 1em;
-}
-
-
-.more-btn {
-    margin-top: 2em;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    padding: 0.75em 1em;
-    background-color: rgba(157, 186, 148, 0.9);
-    color: black;
-    border: none;
-    border-radius: 1em;
-    transition: all 0.3s ease-in-out;
-}
-         
-.more-btn:hover {
-     background-color: rgba(84, 115, 142, 0.9);
-     cursor: pointer;
-     transform: scale(1.1);
-}
-}    
+ 
 
 .card:nth-child(1) .card-image {
     background-image: url(../../images/fenner/fenner-house-6.JPG)
@@ -951,6 +886,148 @@ header nav a{
 }
 }    
 
+@media (min-width: 1441px) {
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5em;
+    
+    }
+    
+    .card {
+        width: 600px;
+        height: 70vh;
+        position: relative;
+        display:flex;
+        padding: 4em;
+        margin-bottom: 2em;
+        flex-direction: column;
+        align-items: center;  
+        background-color: whitesmoke;
+        border-radius: 1em;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .card .card-image {
+        height: 500px;
+        width: 500px;
+        border-radius: 2em;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .card .card-title {
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 1rem;
+        color: black
+    }
+    
+    .card .card-text {
+        font-size: 1.25rem;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    
+    
+    .more-btn {
+        margin-top: 2em;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        padding: 0.75em 1em;
+        background-color: rgba(157, 186, 148, 0.9);
+        color: black;
+        border: none;
+        border-radius: 1em;
+        transition: all 0.3s ease-in-out;
+    }
+             
+    .more-btn:hover {
+         background-color: rgba(84, 115, 142, 0.9);
+         cursor: pointer;
+         transform: scale(1.1);
+    }
+    }  
+
+ @media (max-width: 1440px) {
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5em;
+        
+        }
+        
+        .card {
+            width: 600px;
+            height: 100vh;
+            position: relative;
+            display:flex;
+            padding: 2em;
+            margin-bottom: 2em;
+            flex-direction: column;
+            align-items: center;  
+            background-color: whitesmoke;
+            border-radius: 1em;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card .card-image {
+            height: 250px;
+            width: 250px;
+            border-radius: 2em;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .card .card-title {
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 1rem;
+            color: black
+        }
+        
+        .card .card-text {
+            font-size: 1.25rem;
+            text-align: center;
+            padding-bottom: 1em;
+        }
+        
+        
+        .more-btn {
+            margin-top: 2em;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            padding: 0.75em 1em;
+            background-color: rgba(157, 186, 148, 0.9);
+            color: black;
+            border: none;
+            border-radius: 1em;
+            transition: all 0.3s ease-in-out;
+        }
+                 
+        .more-btn:hover {
+             background-color: rgba(84, 115, 142, 0.9);
+             cursor: pointer;
+             transform: scale(1.1);
+        }
+        }  
+
 @media (max-width: 1024px) {
 
     .page-heading{
@@ -973,10 +1050,10 @@ header nav a{
     
     .card {
         width: 300px;
-        height: 70vh;
+        height: 85vh;
         position: relative;
         display:flex;
-        padding: 1.5em;
+        padding: 2em;
         margin-bottom: 2em;
         flex-direction: column;
         align-items: center;  
@@ -990,8 +1067,8 @@ header nav a{
         transform: scale(1.05);
     }
     .card .card-image {
-        height: 250px;
-        width: 250px;
+        height: 225px;
+        width: 225px;
         border-radius: 2em;
         background-position: center;
         background-size: cover;
@@ -1035,7 +1112,7 @@ header nav a{
     }
 }  
 
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
 
     .page-heading{
         font-size: 0.75rem;
@@ -1046,23 +1123,20 @@ header nav a{
         text-align: center;
         margin: 1.5em;
         padding-bottom: 0;
-    
     }
     .card-container {
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 1.5em;
         flex-wrap: wrap;
+        height: 210vh;
     }
     
     .card {
         width: 300px;
-        height: 70vh;
+        height: 95vh;
         position: relative;
         display:flex;
-        padding: 1.5em;
-        margin-bottom: 2em;
+        padding: 2em;
         flex-direction: column;
         align-items: center;  
         background-color: whitesmoke;
@@ -1075,8 +1149,86 @@ header nav a{
         transform: scale(1.05);
     }
     .card .card-image {
-        height: 250px;
-        width: 250px;
+        height: 225px;
+        width: 225px;
+        border-radius: 2em;
+        background-position: center;
+        background-size: cover;
+    
+    }
+    
+    .card .card-title {
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 1rem;
+        color: black
+    }
+    
+    .card .card-text {
+        font-size: 1rem;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    
+    .more-btn {
+        margin-top: 1em;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        padding: 0.75em 1em;
+        background-color: rgba(157, 186, 148, 0.9);
+        color: black;
+        border: none;
+        border-radius: 1em;
+        transition: all 0.3s ease-in-out;
+    }
+             
+    .more-btn:hover {
+         background-color: rgba(84, 115, 142, 0.9);
+         cursor: pointer;
+         transform: scale(1.1);
+    }
+}  
+
+@media (max-width: 625px) {
+
+    .page-heading{
+        font-size: 0.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 1.5em;
+        padding-bottom: 0;
+    }
+    .card-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 330vh;
+    }
+    
+    .card {
+        width: 300px;
+        height: 95vh;
+        position: relative;
+        display:flex;
+        padding: 2em;
+        flex-direction: column;
+        align-items: center;  
+        background-color: whitesmoke;
+        border-radius: 1em;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .card .card-image {
+        height: 225px;
+        width: 225px;
         border-radius: 2em;
         background-position: center;
         background-size: cover;
@@ -1132,15 +1284,15 @@ header nav a{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        height: 230vh;
+        height: 290vh;
     }
     
     .card {
         width: 300px;
-        height: 70vh;
+        height: 90vh;
         position: relative;
         display:flex;
-        padding: 1.5em;
+        padding: 2em;
         flex-direction: column;
         align-items: center;  
         background-color: whitesmoke;
@@ -1153,8 +1305,8 @@ header nav a{
         transform: scale(1.05);
     }
     .card .card-image {
-        height: 250px;
-        width: 250px;
+        height: 225px;
+        width: 225px;
         border-radius: 2em;
         background-position: center;
         background-size: cover;
@@ -1193,7 +1345,6 @@ header nav a{
          transform: scale(1.1);
     }
 }  
-
 
 /*CHURCHILL buildings info */
 .main-buildings-info {
@@ -1245,6 +1396,7 @@ header nav a{
 
     .cp {
         padding-bottom: 1em;
+        font-size: 2rem;
         }
 
     .cpresource {
@@ -1254,10 +1406,12 @@ header nav a{
         }
 
     .churchill-text{
-        font-size: 2rem;
-        padding: 0em 20em 0em 20em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         text-align: left;
         padding-top: 2em;
+      
     }
     
     .owl-carousel .owl-nav button.owl-next {
@@ -1291,6 +1445,7 @@ header nav a{
         min-height: 100vh;
         background: white;
         place-items: center;
+        
      }
 
      .page-heading{
@@ -1336,6 +1491,7 @@ header nav a{
  
      .cp {
          padding-bottom: 1em;
+         font-size: 1.5rem;
          }  
 
     .cpresource {
@@ -1344,8 +1500,8 @@ header nav a{
         }
 
      .churchill-text{
-         font-size: 2rem;
-         padding: 0em 15em 0em 15em;
+         display: flex;
+         flex-wrap: wrap;
          text-align: left;
          padding-top: 1.5em;
      }
@@ -1428,6 +1584,8 @@ header nav a{
          padding: 0em 25em 0em 25em;
          text-align: left;
          padding-top: 2em;
+         display: flex;
+         flex-wrap: wrap;
      }
      
      .owl-carousel .owl-nav button.owl-next {
@@ -1517,6 +1675,8 @@ header nav a{
          padding: 0em 20em 0em 20em;
          text-align: left;
          padding-top: 1em;
+         display: flex;
+         flex-wrap: wrap;
      }
      
      .owl-carousel .owl-nav button.owl-next {
@@ -1545,7 +1705,7 @@ header nav a{
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:1201px) {
     .main-buildings-info {
         max-width: 100%;
         min-height: 100vh;
@@ -1606,6 +1766,8 @@ header nav a{
          padding: 0em 15em 0em 15em;
          text-align: left;
          padding-top: 1em;
+         display: flex;
+         flex-wrap: wrap;
      }
      
      .owl-carousel .owl-nav button.owl-next {
@@ -1637,7 +1799,7 @@ header nav a{
 @media (min-width:1024px) {
     .main-buildings-info {
         max-width: 100%;
-        min-height: 100vh;
+        height: 130vh;
         background: white;
         place-items: center;
      }
@@ -1684,6 +1846,7 @@ header nav a{
      }
 
      .cp {
+        font-size: 1.2rem;
         padding-bottom: 1em;
         }
         .cpresource {
@@ -1691,11 +1854,10 @@ header nav a{
             font-size: 0.9rem;
             }
      .churchill-text{
-         font-size: 1.2rem;
          padding: 0em 10em 0em 10em;
          text-align: left;
          padding-top: 1em;
-     }
+    }
      
      .owl-carousel .owl-nav button.owl-next {
          position: relative;
@@ -1726,13 +1888,13 @@ header nav a{
 @media (max-width:1023px) {
     .main-buildings-info {
         max-width: 100%;
-        min-height: 100vh;
+        height: 130vh;
         background: white;
         place-items: center;
      }
  
      .page-heading{
-         font-size: 0.5rem;
+         font-size: 0.75rem;
          text-decoration: none;
      }
      
@@ -1751,7 +1913,7 @@ header nav a{
     }
 
      .owl-carousel .owl-nav {
-         margin-bottom: -1em; 
+         margin-bottom: -8.4em; 
      }
  
      .owl-carousel .item {
@@ -1773,6 +1935,7 @@ header nav a{
      }
 
      .cp {
+        font-size: 1.2rem;
         padding-bottom: 1em;
         }
         .cpresource {
@@ -1780,11 +1943,10 @@ header nav a{
             font-size: 0.9rem;
             }
      .churchill-text{
-         font-size: 1.2rem;
          padding: 0em 10em 0em 10em;
          text-align: left;
          padding-top: 1em;
-     }
+    }
      
      .owl-carousel .owl-nav button.owl-next {
          position: relative;
@@ -1792,7 +1954,6 @@ header nav a{
          transform: translateY(-75%);
          color: black;
          left: 0.6em;
-         display: none;
      }
      
      .owl-carousel .owl-nav button.owl-prev {
@@ -1801,7 +1962,6 @@ header nav a{
          transform: translateY(-75%);
          color: black;
          right: 0.6em;
-         display: none;
      }
 
      .owl-carousel .owl-nav button.owl-next:hover {
@@ -1842,7 +2002,7 @@ header nav a{
     }
 
      .owl-carousel .owl-nav {
-         margin-bottom: -1em; 
+         margin-bottom: -8.5em; 
      }
  
      .owl-carousel .item {
@@ -1864,6 +2024,7 @@ header nav a{
      }
 
      .cp {
+        font-size: 1em;
         padding-bottom: 1em;
         }
         .cpresource {
@@ -1871,7 +2032,6 @@ header nav a{
             font-size: 0.9rem;
             }
      .churchill-text{
-         font-size: 1.1em;
          padding: 0em 5em 0em 5em;
          text-align: left;
          padding-top: 1em;
@@ -1883,7 +2043,6 @@ header nav a{
          transform: translateY(-75%);
          color: black;
          left: 0.6em;
-         display: none;
      }
      
      .owl-carousel .owl-nav button.owl-prev {
@@ -1892,7 +2051,6 @@ header nav a{
          transform: translateY(-75%);
          color: black;
          right: 0.6em;
-         display: none;
      }
 
      .owl-carousel .owl-nav button.owl-next:hover {
@@ -1905,7 +2063,7 @@ header nav a{
     }
 }
 
-@media (max-width:625px) {
+@media (max-width:810px) {
     .main-buildings-info {
         max-width: 100%;
         min-height: 100vh;
@@ -1933,7 +2091,7 @@ header nav a{
     }
 
      .owl-carousel .owl-nav {
-         margin-bottom: -1em; 
+         margin-bottom: -8.5em; 
      }
  
      .owl-carousel .item {
@@ -1955,6 +2113,7 @@ header nav a{
      }
 
      .cp {
+        font-size: 0.95em;
         padding-bottom: 1em;
         }
         .cpresource {
@@ -1962,7 +2121,6 @@ header nav a{
             font-size: 0.9rem;
             }
      .churchill-text{
-         font-size: 1em;
          padding: 0em 5em 0em 5em;
          text-align: left;
          padding-top: 1em;
@@ -1994,7 +2152,96 @@ header nav a{
     }
 }
 
-@media (max-width:565px) {
+@media (max-width:768px) {
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 100vh;
+        background: white;
+        place-items: center;
+     }
+ 
+     .page-heading{
+         font-size: 0.5rem;
+         text-decoration: none;
+     }
+     
+     .carousel-container {
+         width: 100%;
+         height: 350px;
+         background-color: whitesmoke;
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+     }
+
+     .owl-carousel{
+        position: relative;
+        align-items: center;
+    }
+
+     .owl-carousel .owl-nav {
+         margin-bottom: -8.5em; 
+     }
+ 
+     .owl-carousel .item {
+         height: 350px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+        text-align: center;
+        font-size: 0.9rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:cover;
+         border-radius: 2em;
+         align-items: center;
+     }
+
+     .cp {
+        font-size: 0.9em;
+        padding-bottom: 1em;
+        }
+        .cpresource {
+            padding-bottom: 1em;
+            font-size: 0.9rem;
+            }
+     .churchill-text{
+         padding: 0em 5em 0em 5em;
+         text-align: left;
+         padding-top: 1em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-next {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         left: 0.6em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-prev {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         right: 0.6em;
+     }
+
+     .owl-carousel .owl-nav button.owl-next:hover {
+        background: none;
+        color: rgba(157, 186, 148);
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background: none;
+        color:rgba(157, 186, 148)
+    }
+}
+
+@media (max-width:635px) {
     .main-buildings-info {
         max-width: 100%;
         min-height: 105vh;
@@ -2044,6 +2291,7 @@ header nav a{
      }
 
      .cp {
+        font-size: 0.9em;
         padding-bottom: 1em;
         }
         .cpresource {
@@ -2051,10 +2299,191 @@ header nav a{
             font-size: 0.75rem;
             }
      .churchill-text{
-         font-size: 0.9em;
          padding: 0em 2em 0em 2em;
          text-align: left;
-         padding-top: 0em;
+         padding-top: 1em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-next {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         left: 0.6em;
+         display: none;
+     }
+     
+     .owl-carousel .owl-nav button.owl-prev {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         right: 0.6em;
+         display: none;
+     }
+
+     .owl-carousel .owl-nav button.owl-next:hover {
+        background: none;
+        color: rgba(157, 186, 148);
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background: none;
+        color:rgba(157, 186, 148)
+    }
+}
+
+@media (max-width:515px) {
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 105vh;
+        background: white;
+        place-items: center;
+     }
+ 
+     .page-heading{
+         font-size: 0.5rem;
+         text-decoration: none;
+     }
+     
+     .carousel-container {
+         width: 100%;
+         height: 350px;
+         background-color: whitesmoke;
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+     }
+
+     .owl-carousel{
+        position: relative;
+        align-items: center;
+    }
+
+     .owl-carousel .owl-nav {
+         margin-bottom: -2em; 
+     }
+ 
+     .owl-carousel .item {
+         height: 350px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+        text-align: center;
+        font-size: 0.5rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:fill;
+         border-radius: 2em;
+         align-items: center;
+     }
+
+     .cp {
+        font-size: 0.8em;
+        padding-bottom: 1em;
+        }
+        .cpresource {
+            padding-bottom: 1em;
+            font-size: 0.75rem;
+            }
+     .churchill-text{
+         padding: 0em 2em 0em 2em;
+         text-align: left;
+         padding-top: 1em;
+     }
+     
+     .owl-carousel .owl-nav button.owl-next {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         left: 0.6em;
+         display: none;
+     }
+     
+     .owl-carousel .owl-nav button.owl-prev {
+         position: relative;
+         font-size: 5rem;
+         transform: translateY(-75%);
+         color: black;
+         right: 0.6em;
+         display: none;
+     }
+
+     .owl-carousel .owl-nav button.owl-next:hover {
+        background: none;
+        color: rgba(157, 186, 148);
+    }
+    .owl-carousel .owl-nav button.owl-prev:hover {
+        background: none;
+        color:rgba(157, 186, 148)
+    }
+}
+
+@media (max-width:515px) {
+    .main-buildings-info {
+        max-width: 100%;
+        min-height: 105vh;
+        background: white;
+        place-items: center;
+     }
+ 
+     .page-heading{
+         font-size: 0.5rem;
+         text-decoration: none;
+     }
+     
+     .carousel-container {
+         width: 100%;
+         height: 350px;
+         background-color: whitesmoke;
+         padding: 2em 0em 2em 0em;
+         align-items: center;
+         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+     }
+
+     .owl-carousel{
+        position: relative;
+        align-items: center;
+    }
+
+     .owl-carousel .owl-nav {
+         margin-bottom: -2em; 
+     }
+ 
+     .owl-carousel .item {
+         height: 350px;
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .owl-carousel .item figcaption {
+        text-align: center;
+        font-size: 0.5rem;
+     }
+ 
+     .owl-carousel .item img{
+         height: 80%;
+         object-fit:fill;
+         border-radius: 2em;
+         align-items: center;
+     }
+
+     .cp {
+        font-size: 0.7em;
+        padding-bottom: 0.7em;
+        }
+        .cpresource {
+            padding-bottom: 1em;
+            font-size: 0.75rem;
+            }
+     .churchill-text{
+         padding: 0em 2em 0em 2em;
+         text-align: left;
+         padding-top: 0.7em;
      }
      
      .owl-carousel .owl-nav button.owl-next {
