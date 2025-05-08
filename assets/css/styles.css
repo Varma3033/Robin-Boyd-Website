@@ -2509,13 +2509,13 @@ header nav a{
 
 /*contact*/
 .contact {
-    min-height: 75vh;
+    min-height: 100%;
     padding: 3em;
     text-align: center;
 }
 
 .contact-container {
-    max-width: 80em;
+    max-width: 90%;
     margin: 0 auto;
 }
 
