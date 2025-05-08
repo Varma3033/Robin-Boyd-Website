@@ -2515,7 +2515,7 @@ header nav a{
 }
 
 .contact-container {
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -2581,12 +2581,14 @@ input:focus, textarea:focus {
 .contact-info h3 {
     font-size: 1.5rem;
     margin-bottom: 1em;
+    margin-left: 2em;
     color: black;
 }
 
 .contact-info p {
     font-size: 1.2rem;
     margin-bottom: 1em;
+    margin-left: 3em;
     color: black;
 }
 
@@ -2595,17 +2597,29 @@ input:focus, textarea:focus {
     margin-right: 0.5em;
 }
 
-@media (max-width:768px){
-    .container {
-        padding: 1em;
+@media (max-width: 1030px){
+    .contact-info p {
+        font-size: 1rem;
     }
+}
 
+@media (max-width:768px){
+  
+    .contact-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
     .contact-wrapper {
         grid-template-columns: 1fr;
     }
-    
+    .contact-info p {
+        font-size: 0.9rem;
+        margin-left: -0.1em;
+    }
+    .contact-info h3 {
+        margin-left: -0.1em;
 }
-    
+}
 
 /*footer*/
 .footer {
