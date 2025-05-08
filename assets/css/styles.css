@@ -2509,7 +2509,7 @@ header nav a{
 
 /*contact*/
 .contact {
-    min-height: 100%;
+    height: 100vh;
     padding: 3em;
     text-align: center;
 }
