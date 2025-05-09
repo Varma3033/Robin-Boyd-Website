@@ -630,7 +630,6 @@ header nav a{
         color: grey;
     }
  }
-
  @media (max-width: 1023px) {
 
     .page-heading {
@@ -678,7 +677,6 @@ header nav a{
         color: grey;
     }
  } 
-
  @media (max-width: 768px) {
 
     .page-heading {
@@ -725,8 +723,7 @@ header nav a{
         padding-right: 1rem;
         color: grey;
     }
- }
-            
+ }         
  @media (max-width: 425px) {
 
     .page-heading {
@@ -957,8 +954,6 @@ header nav a{
          transform: scale(1.1);
     }
     }    
-    
-
  @media (max-width: 1440px) {
 
         .card-container {
@@ -1030,7 +1025,6 @@ header nav a{
              transform: scale(1.1);
         }
         }  
-
 @media (max-width: 1024px) {
 
     .page-heading{
@@ -1198,7 +1192,6 @@ header nav a{
          transform: scale(1.1);
     }
 }
-
 @media (max-width: 768px) {
 
     .page-heading{
@@ -1276,7 +1269,6 @@ header nav a{
          transform: scale(1.1);
     }
 }  
-
 @media (max-width: 625px) {
 
     .page-heading{
@@ -1354,7 +1346,6 @@ header nav a{
          transform: scale(1.1);
     }
 }  
-
 @media (max-width: 425px) {
 
     .page-heading{
@@ -1606,7 +1597,6 @@ header nav a{
          right: 0.5em;
      }
     }
-
 @media (min-width:1441px) {
     .main-buildings-info {
         max-width: 100%;
@@ -1697,7 +1687,6 @@ header nav a{
         color:rgba(157, 186, 148)
     }
 }
-
 @media (max-width:1440px) {
     .main-buildings-info {
         max-width: 100%;
@@ -1788,7 +1777,6 @@ header nav a{
         color:rgba(157, 186, 148)
     }
 }
-
 @media (min-width:1201px) {
     .main-buildings-info {
         max-width: 100%;
@@ -1879,7 +1867,6 @@ header nav a{
         color:rgba(157, 186, 148)
     }
 }
-
 @media (min-width:1024px) {
     .main-buildings-info {
         max-width: 100%;
@@ -1968,7 +1955,6 @@ header nav a{
         color:rgba(157, 186, 148)
     }
 }
-
 @media (max-width:1023px) {
     .main-buildings-info {
         max-width: 100%;
@@ -2057,7 +2043,6 @@ header nav a{
         color:rgba(157, 186, 148)
     }
 }
-
 @media (max-width:1000px) {
     .main-buildings-info {
         max-width: 100%;
@@ -2146,7 +2131,6 @@ header nav a{
         color:rgba(157, 186, 148)
     }
 }
-
 @media (max-width:810px) {
     .main-buildings-info {
         max-width: 100%;
@@ -2235,7 +2219,6 @@ header nav a{
         color:rgba(157, 186, 148)
     }
 }
-
 @media (max-width:768px) {
     .main-buildings-info {
         max-width: 100%;
@@ -2324,7 +2307,6 @@ header nav a{
         color:rgba(157, 186, 148)
     }
 }
-
 @media (max-width:635px) {
     .main-buildings-info {
         max-width: 100%;
@@ -2415,7 +2397,6 @@ header nav a{
         color:rgba(157, 186, 148)
     }
 }
-
 @media (max-width:515px) {
     .main-buildings-info {
         max-width: 100%;
