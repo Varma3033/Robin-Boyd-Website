@@ -11,7 +11,8 @@ function showSidebar(){
 
 
 /*carousel*/
-
+/*changed autoheight, autowidth, dots, responsiveness
+dotseach, autoplay, autoplaytimeout, margin*/
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:50,

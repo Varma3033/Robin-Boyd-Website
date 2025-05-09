@@ -7,9 +7,6 @@
 /* green - rgba(157, 186, 148) */
 /* blue - rgba(84, 115, 142) */
 
-
-p {}
-
 h1 {
     font-size: 3rem;
     text-decoration: none;
@@ -22,14 +19,11 @@ h2 {
     color: black;
 }   
 
-h3 {}
-
-
 body {
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/*Hero Image*/
 @media (min-width:769px) {
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../../images/fenner/fenner-house-6.JPG);
@@ -40,7 +34,6 @@ body {
     display: block !important;
 }
 }
-
 @media (max-width:768px) {
     .hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../../images/churchill/churchill-house-21.jpg);
@@ -737,7 +730,7 @@ header nav a{
     }
     
     .main-about {
-        min-height: 100vh;
+        max-height: 180vh;
         max-width: 100%;
     }
     .about-container {
@@ -786,15 +779,12 @@ header nav a{
     width: 100%;
 }
  
-
 .card:nth-child(1) .card-image {
     background-image: url(../../images/fenner/fenner-house-6.JPG)
 }
-
 .card:nth-child(2) .card-image {
     background-image: url(../../images/churchill/churchill-house-21.jpg)
 }
-
 .card:nth-child(3) .card-image {
     background-image: url(../../images/manning-clark/manning-clark-3-anthiny-basheer.jpg)
 }
@@ -805,7 +795,6 @@ header nav a{
     align-items: center;
     height: auto;
     gap: 2em;
-
 }
 
 .card {
@@ -832,7 +821,6 @@ header nav a{
     border-radius: 2em;
     background-position: center;
     background-size: cover;
-
 }
 
 .card .card-title {
@@ -869,7 +857,6 @@ header nav a{
      cursor: pointer;
      transform: scale(1.1);
 }
-
 
 @media (max-width: 1920px) {
 
@@ -954,7 +941,7 @@ header nav a{
          transform: scale(1.1);
     }
     }    
- @media (max-width: 1440px) {
+@media (max-width: 1440px) {
 
         .card-container {
             display: flex;
@@ -1024,7 +1011,7 @@ header nav a{
              cursor: pointer;
              transform: scale(1.1);
         }
-        }  
+    }  
 @media (max-width: 1024px) {
 
     .page-heading{
@@ -1424,7 +1411,7 @@ header nav a{
     }
 }  
 
-/*CHURCHILL buildings info */
+/*buildings information */
 .main-buildings-info {
        max-width: 100%;
        min-height: 100vh;
@@ -1489,7 +1476,6 @@ header nav a{
         flex-direction: column;
         text-align: left;
         padding-top: 2em;
-      
     }
     
     .owl-carousel .owl-nav button.owl-next {
@@ -2556,7 +2542,6 @@ input:focus, textarea:focus {
 
 .contact-info {
     text-align: left;
-    
 }
 
 .contact-info h3 {
@@ -2655,11 +2640,6 @@ footer .copyright {
     color: black;
 }
 
-@media (min-width: 1440px) {
-
-
-}
-
 @media (min-width: 1201px) {
 
     .footer {
@@ -2720,7 +2700,6 @@ footer .copyright {
     
 
 }
-
 @media (max-width: 1200px) {
     .footer {
         background-color: rgba(84, 115, 142, 0.9);
@@ -2779,20 +2758,12 @@ footer .copyright {
         
     }
 }
-
 @media (max-width: 505px) {
     body {
         min-height: 100vh;
         padding: 0;
     }
     
-    .hero-image {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../../images/fenner-house-6.JPG);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-    }
 
     .footer {
         background-color: rgba(84, 115, 142, 0.9);
