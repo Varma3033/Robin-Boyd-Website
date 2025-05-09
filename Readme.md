@@ -1,4 +1,5 @@
-Responsive Website Rationale
+Responsive Website Rationale:
+https://varma3033.github.io/Robin-Boyd-Website/index.html
 
 Creating a responsive website proved to be a challenging yet fulfilling task. Using the provided content, my aim was to develop a website appealing to those interested in architectural and design history, particularly showcasing architect Robin Boyd and his modernist theories. I made a strong effort to closely follow the design of my prototype!![Desktop Homepage](<Desktop - 1.png>)[Mobile Homepage](<iPhone 16 - 6.png>), which illustrates Boyd’s core concepts — emphasising simplicity and functionality, minimising distracting elements (Boyd, 1960) and incorporating accessible colours, text, and typography. 
 
